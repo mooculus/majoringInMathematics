@@ -1,0 +1,80 @@
+%\documentclass[handout,nooutcomes]{ximera}
+\documentclass{ximera}
+
+\title{Sums and products combined, oh my!  Part 2}
+
+\begin{document}
+\begin{abstract}
+Here we continue to investigate a new way to combine numbers.
+\end{abstract}
+\maketitle
+
+\emph{Let's set off the following question in a box.} 
+
+Suppose you wrote the numbers $1,2,3,\dots,100$ on a chalkboard. You
+may take any two numbers, erase them, and then add the sum of their
+sum and their product to the list.
+
+Last class, we began investigating this idea, and we generated a lot of interesting questions.  
+In this activity, we address some of these questions.  
+
+First note that the process defines a new operation on numbers.  Let's call the operation $\star$.  Given two numbers $a$ and $b$,  $a\star b$ is then ``the sum of their sum and their product.''    
+
+\begin{problem}
+Is $\star$ a commutative operation?  Explain.  
+\begin{freeResponse}
+$a\star b = a+b+ab= b+a+ba = b\star a$.  
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Is $\star$ an associative operation?  Explain.  
+\begin{freeResponse}
+$(a\star b)\star c = (a+b+ab)\star c = (a+b+ab)+c + (a+b+ab)c 
+= a + b + c + ab + ac + bc + abc = a+(b+c+bc) + a(b+c+bc) =
+a\star (b+c+bc) = a \star(b\star c)$.  Note that because $\star$ is both associative 
+and commutative, the order that we choose numbers does not matter.  
+\end{freeResponse}
+\end{problem}
+
+Back to the situation, let's try some simpler problems.  
+
+\begin{problem}
+Try starting with the numbers $1,2,3,\dots, k$ for several small values of $k$.  What do you notice?  
+\begin{freeResponse}
+Beginning with $k = 2$, the pattern is $5, 23, 119, 729, \dots$.  
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+What if we start with just $1$s?  Try starting with $k$ $1$s, for several small values of $k$.  What do you notice?  
+\begin{freeResponse}
+Beginning with $k=2$, the pattern is $3, 7, 15, 31, \dots$.  
+\end{freeResponse}
+\end{problem}
+
+\newpage 
+
+\begin{problem}
+Expand the expression $(x+a)(x+b)$.  What is the value of this expression when $x=1$?  What do you notice?
+\begin{freeResponse}
+$(x+a)(x+b) = x^2+ (a+b)x+ab$.  When $x=1$, we get $1+a+b+ab$, which is $1+(a\star b)$.  
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Expand the expression $(x+a)(x+b)(x+c)$.  What is the value of this expression when $x=1$?  What do you notice?
+\begin{freeResponse}
+$(x+a)(x+b)(x+c) = x^3+ (a+b+c)x^2+(ab+bc+ac)x+abc$.  When $x=1$, we get $1+a+b+c+ab+bc+ac+abc$, 
+which is $1+(a\star b\star c)$
+\end{freeResponse}
+\end{problem}
+
+\begin{problem}
+Can you construct expressions that will help you solve the previous problems?  
+\begin{freeResponse}
+Try $(x+1)(x+2)(x+3)\dots(x+k)$ and $(x+1)^k$, again when $x=1$.  
+\end{freeResponse}
+\end{problem}
+
+\end{document}
