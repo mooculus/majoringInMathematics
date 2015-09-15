@@ -12,38 +12,46 @@ Here we continue to investigate where your payments go when you pay off debt.
 
 \begin{question}
 Suppose you borrow $\$P$ and agree to pay it back in equal annual
-payments over $n$ years, with an annual interest rate of $r$, compounded annually.  
+payments over $5$ years, with an annual interest rate of $r$, compounded annually.  
 Call the annual payment $x$, and write an equation that must be true if
-the payment amount is correct.  
+the payment amount is correct.
+\[
+\answer{P(1+r)^5-x(1+r)^4 -x(1+r)^3-x(1+r)^2 - x(1+r) -x} = 0.
+\]
 
 \begin{hint}
 Use your table from last week's class, showing the interest, payment, and remaining
 principal at the end of years $1, 2, 3, \dots$, and try to see
 patterns in the table.  It helps to collect factors of $(1+r)$.
 \end{hint} 
-\includegraphics[scale=1.2]{payingOffDebtTableGraphic2.pdf}
+%\includegraphics[scale=1.2]{payingOffDebtTableGraphic2.pdf}
 
-\begin{freeResponse}
-\end{freeResponse}
+%\begin{freeResponse}
+%\end{freeResponse}
 \end{question}
 
 
 \begin{question}
-Some students notice that the equation above includes a geometric series.  Write that geometric series here.
-\begin{freeResponse}
-\end{freeResponse}
+Some students notice that the equation above includes a geometric
+series.  Which of the following are examples of geometric series?
+\begin{multipleChoice}
+  \choice{$1+2+3+4+5+6+7$}
+  \choice[correct]{$(1/2) + (1/2)^2 + (1/2)^3 + (1/2)^4+(1/2)^5$}
+  \choice{$3+6+9+12+15+18+21$}
+  \choice[correct]{$(1+r) + (1+r)^2 + (1+r)^3 + (1+r)^4+ (1+r)^5$}
+  \choice[correct]{$0.151515151515\dots$}
+\end{multipleChoice}
+
 \end{question}
 
 \begin{question}
-How do you know this is a series?  How do you know this is a geometric series?   
-\begin{freeResponse}
-\end{freeResponse}
-\end{question}
-
-\begin{question}
-Find a closed-form expression for the sum of the geometric series.  
-\begin{freeResponse}
-\end{freeResponse}
+  Find a closed-form expression for the sum of the geometric series:
+  \[
+  1 + (1+r) + (1+r)^2 + (1+r)^3 + \dots + (1+r)^{n-2}+ (1+r)^{n-1}
+  \]
+  \[
+  \answer{\frac{(1+r)^n-1}{r}}
+  \]
 \end{question}
 
 %\begin{question}
@@ -53,11 +61,11 @@ Find a closed-form expression for the sum of the geometric series.
 %\end{question}
 
 
-\begin{question}
-Use the closed-form expression for the sum of the geometric series to solve your equation for $x$, the annual payment.   
-\begin{freeResponse}
-\end{freeResponse}
-\end{question}
+%% \begin{question}
+%% Use the closed-form expression for the sum of the geometric series to solve your equation for $x$, the annual payment.   
+%% \begin{freeResponse}
+%% \end{freeResponse}
+%% \end{question}
 
 %\begin{question}
 %What about monthly payments?  In other words, suppose you borrow $\$P$ and agree to pay it back in equal monthly
