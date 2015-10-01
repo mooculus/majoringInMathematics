@@ -1,6 +1,6 @@
 \documentclass{ximera}
 
-
+\input{../preamble.tex}
 \outcome{Understanding working with units.}
 \outcome{Understanding the magnitude of measurments.}
 \outcome{Understanding relevant measurments.}
@@ -17,24 +17,154 @@ Remember this video?
 \youtube{http://www.youtube.com/watch?v=oBDZtt0vWD8}
 
 
-From our last class, we came up with four pressing questions. Try to
-answer as many of these as you can! Note, these questions were simply
-copied from the board, hence they may be vague.
+%% From our last class, we came up with four pressing questions. Try to
+%% answer as many of these as you can! Note, these questions were simply
+%% copied from the board, hence they may be vague.
+
+%% \begin{problem}
+%%   If the Moon is closer, where is the ``equilibrium point'' between the
+%%   Earth and the ``closer'' Moon?
+%% \end{problem}
+
+%% \begin{problem}
+%%   If the Moon is closer, how exactly does the brightness change?
+%% \end{problem}
+
+%% \begin{problem}
+%%   How quickly would the Moon orbit in its closer position?
+%% \end{problem}
+
+%% \begin{problem}
+%%   What changes in gravity would we notice?
+%% \end{problem}
+
+In our last class we investigated how large the shadow of the Moon
+would be during a solar eclipse. One thing that makes this problem
+tricky is the sheer size of the numbers involved. Let's all agree on the following:
+\begin{itemize}
+\item The radius of the Sun is $6.96\times 10^5$ km.
+\item The radius of the Moon is $1.74\times 10^3$ km.
+\item The distance from the Earth to the Sun is $1.52\times 10^8$
+  km.
+\end{itemize}
+
+Now consider this schematic diagram:
+\begin{image}
+  \begin{tikzpicture}
+    \coordinate (S) at (0,4);
+    \coordinate (Sn) at (0,-4);
+    \coordinate (M) at (7,2);
+    \coordinate (Mn) at (7,-2);
+    \coordinate (E) at (10,3);
+    \coordinate (En) at (10,-3);
+    \coordinate (U) at (14,0);
+    \coordinate (OS) at (0,0);
+    \coordinate (OM) at (7,0);
+    \coordinate (OE) at (10,0);
+    \coordinate (SW) at (10,1.14);
+    \tkzMarkRightAngle(S,OS,U)
+    \tkzMarkRightAngle(M,OM,U)
+    \tkzMarkRightAngle(E,OE,U)
+    \tkzDefMidPoint(OE,SW) \tkzGetPoint{X}
+    \tkzDefMidPoint(OE,U) \tkzGetPoint{L}
+    \tkzDefMidPoint(OM,M) \tkzGetPoint{MR}
+    \tkzDefMidPoint(OS,S) \tkzGetPoint{SR}
+    \tkzDefMidPoint(OM,OE) \tkzGetPoint{D}
+    %% \draw[decoration={brace,mirror,raise=.2cm},decorate,thin] (0,2)--(6,2);
+    \draw[decoration={brace,mirror,raise=.2cm},decorate,thin] (0+.2,0)--(10-.2,0);
+    \draw[black!50!white,dashed] (OS)--(OM);
+    \draw[black!50!white,dashed] (S)--(U);
+    \draw[black!50!white,dashed] (Sn)--(U);
+    \draw[black!50!white,very thick] (En)--(E);
+    \draw[black!50!white,very thick] (Sn)--(OS);
+    \draw[black!50!white,very thick] (Mn)--(OM);
+    \draw[very thick] (OS)--(S);
+    \draw[very thick,red] (OM)--(OE);
+    \draw[very thick] (OM)--(M);
+    \draw[very thick] (OE)--(SW);
+    \draw[very thick] (OE)--(U);
+    \node[left] at (SR) {$6.69\times 10^5$ km};
+    \node[left] at (MR) {$1.74\times 10^3$ km};
+    \node[above] at (L) {$\ell$};
+    \node[left] at (X) {$x$};
+    \node[above] at (D) {$d$};
+    \node[below] at (Sn) {Sun};
+    \node[below] at (Mn) {Moon};
+    \node[below] at (En) {Earth};
+    \node at (5,-.5) {$1.52\times 10^8$ km};
+  \end{tikzpicture}
+\end{image}
+
+
+
+From the diagram we can make the following equation (using similar triangles)
+\[
+\frac{x}{\ell} = \frac{6.96\times 10^5}{1.52\times 10^8 + \ell}.
+\]
+It turns out that $\ell$ is much, much smaller than the distance to
+the Sun. Hence, we can simplify the expression above to the
+approximate equation
+\[
+\frac{x}{\ell} = \frac{6.96\times 10^5}{1.52\times 10^8}.
+\]
+Moreover, (again using similar triangles) we see that
+\[
+\frac{x}{\ell}  = \frac{1.74\times 10^3}{d+\ell}
+\]
+where $d$ represents the distance from the Earth to the Moon.
 
 \begin{problem}
-  If the Moon is closer, where is the ``equilibrium point'' between the
-  Earth and the ``closer'' Moon?
+  Using the approximate equations
+  \[
+  \frac{x}{\ell} = \frac{6.96\times 10^5}{1.52\times 10^8} \qquad\text{and}\qquad \frac{x}{\ell}  = \frac{1.74\times 10^3}{d+\ell}
+  \]
+  solve for $x$ in terms of $d$.
+  \[
+  x = \answer{-0.00457895 (-380000 + d)}\text{ km}
+  \]
 \end{problem}
 
 \begin{problem}
-  If the Moon is closer, how exactly does the brightness change?
+  At its closest, the (actual) Moon is around $3.6\times 10^5$ km from
+  the Earth.  What is the radius of the shadow of the Moon in this
+  case?
+  \[
+  x = \answer{91.58} \text{ km}
+  \]
 \end{problem}
 
 \begin{problem}
-  How quickly would the Moon orbit in its closer position?
+  In our hypothetical setting where the Moon is as close as the
+  International Space Station is around $382$ km from the Earth.  What
+  is the radius of the shadow of the Moon in this case?
+  \[
+  x = \answer{1738.25} \text{ km}
+  \]
 \end{problem}
 
+
+
 \begin{problem}
-  What changes in gravity would we notice?
+  At its furthest, the (actual) Moon is around $4.5\times 10^5$ km
+  from the Earth.  According to your equation above, what is the
+  radius of the shadow of the Moon in this case?
+  \[
+  x = \answer{-320.5} \text{ km}
+  \]
+  \begin{problem}
+    How do you interepert this negative answer?
+    \begin{freeResponse}
+      Answers will vary.
+    \end{freeResponse}
+  \end{problem}
 \end{problem}
+
+
+
+
+
+
+
 \end{document}
+
+
