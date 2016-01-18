@@ -1,0 +1,22 @@
+\NeedsTeXFormat{LaTeX2e}% LaTeX 2.09 can't be used (nor non-LaTeX)
+[1994/12/01]% LaTeX date must be December 1994 or later
+\ProvidesPackage{lulu}[2015/12/17 v0.75]
+\ProcessOptions\relax
+
+
+%% This is the code that will allow us to redefine the title with
+\makeatletter
+\newcounter{sectiontitlenumber}
+\setcounter{secnumdepth}{0}
+
+\newcommand\worksheetstyle{%
+  \def\maketitle{%
+    \addtocounter{titlenumber}{1}%
+    \addcontentsline{toc}{section}{\textbf{\thetitlenumber\quad\@title}}%
+                    {\flushleft Name:\protect\rule[-2pt]{3in}{.5pt}\hfill \\[.5cm]name.\#\protect\rule[-2pt]{3in}{.5pt}}%
+                    {\flushleft\LARGE\sffamily\bfseries\thetitlenumber\quad\@title \par }%
+                    {\setcounter{problem}{0}\setcounter{sectiontitlenumber}{0}}%
+                    \par}}
+\makeatother
+
+\endinput
