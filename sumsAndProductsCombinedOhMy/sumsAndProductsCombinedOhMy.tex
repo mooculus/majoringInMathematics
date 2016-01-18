@@ -1,4 +1,4 @@
-\documentclass[handout,nooutcomes,space]{ximera}
+\documentclass[nooutcomes]{ximera}
 
 \input{../preamble.tex}
 
@@ -10,56 +10,109 @@ Here we investigate a new way to combine numbers.
 \end{abstract}
 \maketitle
 
+\paragraph{The setting:}
+
 Suppose you wrote the numbers $1,2,3,\dots,100$ on a chalkboard. You
 may take any two numbers, erase them, and then add the sum of their
 sum and their product to the list.
 
 \begin{problem}
-In class we came up with several questions involing this setting. State three of them. 
+     Write down as many mathematical questions as you can for this
+     setting. After you have your questions, label them as ``Level
+     1,'' ``Level 2,'' or ``Level 3'' where:
+\begin{description}
+\item[Level 1] Means you know the answer, or know exactly how to do
+  this problem.
+\item[Level 2] Means you think you know how to do the problem.
+\item[Level 3] Means you have no idea how to do the problem.
+\end{description}
 \begin{freeResponse}
+  Here are some example questions:
+  \paragraph{Level 1}
+  \begin{enumerate}
+    \item Given two positive numbers, if we perform the process on
+      these numbers will the result always be larger than the initial
+      two numbers?
+    \item If we do this process with a number and zero, what will be
+      the result?
+    \item Given a list of $2$ numbers, after performing the processes
+      once, how many numbers are in the list?
+    \item Given a list of $100$ numbers, after perfomring the process
+      once, how many numbers are in the list?
+    \item If we perform the process enough times, will we always end
+      with one number?
+    \item Given a list of $100$ numbers, how many times do we need to
+      perfom th e process to end with exaclty $1$ number?
+    \item Given a list of positive numbers, can we choose which two
+      will give us the largest result after perfoming the process?
+    \item Given a list of positive numbers, can we choose which two
+      will give us the smallest result after perfoming the process?
+    \item If we think of the process as a binary operation, call it
+      $\pt$, is it commutative?
+    \item What is $1 \pt 1$?
+  \end{enumerate}
+
+  \paragraph{Level 2}
+  \begin{enumerate}
+    \item Given two numbers $a$ and $b$, possibly positive or negative
+      or zero, will the result ever be smaller than $a$ or $b$?
+  \end{enumerate}
+
+  \paragraph{Level 3}
+  \begin{enumerate}
+    \item
+  \end{enumerate}
+  
 \end{freeResponse}
 \end{problem}
 
-\begin{problem}
-  With this setting, we made up a new operation $\pt$ where
-  \[
-  a\pt b = a+b + ab
-  \]
-  What is
-  \[
-  a\pt b\pt c = \answer{a+b+c+ab+ac+bc+abc}
-  \]
-\end{problem}
 
-\begin{problem}
-We showed that $\pt$ is \textbf{commutative}, which means
-\begin{multipleChoice}
-  \choice[correct]{$a\pt b = b\pt a$}
-  \choice{$((a\pt b)\pt c) = a(\pt (b\pt c))$}
-\end{multipleChoice}
-\end{problem}
+%% \begin{problem}
+%% In class we came up with several questions involing this setting. State three of them. 
+%% \begin{freeResponse}
+%% \end{freeResponse}
+%% \end{problem}
 
-\begin{problem}
-We showed that $\pt$ is \textbf{associative}, which means
-\begin{multipleChoice}
-  \choice{$a\pt b = b\pt a$}
-  \choice[correct]{$((a\pt b)\pt c) = a(\pt (b\pt c))$}
-\end{multipleChoice}
-\end{problem}
+%% \begin{problem}
+%%   With this setting, we made up a new operation $\pt$ where
+%%   \[
+%%   a\pt b = a+b + ab
+%%   \]
+%%   What is
+%%   \[
+%%   a\pt b\pt c = \answer{a+b+c+ab+ac+bc+abc}
+%%   \]
+%% \end{problem}
 
-\begin{problem}
-Finally we encoutered several squences of numbers including
-\begin{align*}
-  &\{ 1, 3, 7, 15, 63,\dots\}\\
-  &\{ 2, 4, 8, 16, 64,\dots\}\\
-  &\{ 1, 5, 23, 119, 719,\dots\}\\
-  &\{ 1, 2, 6, 24, 120,\dots\}
-\end{align*}
-Look these sequences up at \link{https://oeis.org/}{https://oeis.org/}. Find something intersting at the OEIS and tell us about it.
-\begin{freeResponse}
-\end{freeResponse}
-See you next Tuesday!
-\end{problem}
+%% \begin{problem}
+%% We showed that $\pt$ is \textbf{commutative}, which means
+%% \begin{multipleChoice}
+%%   \choice[correct]{$a\pt b = b\pt a$}
+%%   \choice{$((a\pt b)\pt c) = a(\pt (b\pt c))$}
+%% \end{multipleChoice}
+%% \end{problem}
+
+%% \begin{problem}
+%% We showed that $\pt$ is \textbf{associative}, which means
+%% \begin{multipleChoice}
+%%   \choice{$a\pt b = b\pt a$}
+%%   \choice[correct]{$((a\pt b)\pt c) = a(\pt (b\pt c))$}
+%% \end{multipleChoice}
+%% \end{problem}
+
+%% \begin{problem}
+%% Finally we encoutered several squences of numbers including
+%% \begin{align*}
+%%   &\{ 1, 3, 7, 15, 63,\dots\}\\
+%%   &\{ 2, 4, 8, 16, 64,\dots\}\\
+%%   &\{ 1, 5, 23, 119, 719,\dots\}\\
+%%   &\{ 1, 2, 6, 24, 120,\dots\}
+%% \end{align*}
+%% Look these sequences up at \link{https://oeis.org/}{https://oeis.org/}. Find something intersting at the OEIS and tell us about it.
+%% \begin{freeResponse}
+%% \end{freeResponse}
+%% See you next Tuesday!
+%% \end{problem}
 
 
 \end{document}
