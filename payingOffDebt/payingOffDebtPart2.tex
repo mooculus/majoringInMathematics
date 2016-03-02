@@ -1,72 +1,92 @@
 %\documentclass{ximera}
 \documentclass[handout,space,nooutcomes]{ximera}
 
+
 \title{Paying off Debt, Part 2}
+
 
 \begin{document}
 \begin{abstract}
 Here we continue to investigate where your payments go when you pay off debt.
 \end{abstract}
+{\flushleft Name:\protect\rule[-2pt]{3in}{.5pt}\hfill \\[.5cm]name.\#\protect\rule[-2pt]{3in}{.5pt}}%
 \maketitle
-
 
 \begin{question}
 Suppose you borrow $\$P$ and agree to pay it back in equal annual
 payments over $5$ years, with an annual interest rate of $r$, compounded annually.  
 Call the annual payment $x$, and write an equation that must be true if
-the payment amount is correct.
-\[
-\answer{P(1+r)^5-x(1+r)^4 -x(1+r)^3-x(1+r)^2 - x(1+r) -x} = 0.
-\]
+the payment amount is correct.  Hints: 
+\begin{itemize}
+\item Use the table from last week's class, showing the interest, payment, and remaining
+principal at the end of years $1, 2, 3, \dots$.  
+\item Collect factors of $(1+r)$.
+\item Let $P_n$ denote the principal in year $n$, and write $P_n$ in terms of $P_{n-1}$, $r$, and $x$.
+\item Write $P_1$, $P_2$, $P_3$, \dots in terms of $P$, $r$, and $x$, and try to find a pattern.  
+\end{itemize}
 
-\begin{hint}
-Use your table from last week's class, showing the interest, payment, and remaining
-principal at the end of years $1, 2, 3, \dots$, and try to see
-patterns in the table.  It helps to collect factors of $(1+r)$.
-\end{hint} 
+%\[
+%\answer{P(1+r)^5-x(1+r)^4 -x(1+r)^3-x(1+r)^2 - x(1+r) -x} = 0.
+%\]
+
+
 %\includegraphics[scale=1.2]{payingOffDebtTableGraphic2.pdf}
 
-%\begin{freeResponse}
-%\end{freeResponse}
+\def\arraystretch{2}
+\begin{table}[h]
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Year & Interest & Balance with Interest & Payment & Remaining Principal Balance \\ \hline
+0    &   0     &       0            &   0    &  $P$                 \\ \hline
+1    &          &                     &         &                             \\ \hline
+2    &          &                     &         &                             \\ \hline
+3    &          &                     &         &                             \\ \hline
+\end{tabular}
+\end{table}
+
+
+\begin{freeResponse}
+\end{freeResponse}
 \end{question}
 
 
-\begin{question}
-Some students notice that the equation above includes a geometric
-series.  Which of the following are examples of geometric series?
-\begin{multipleChoice}
-  \choice{$1+2+3+4+5+6+7$}
-  \choice[correct]{$(1/2) + (1/2)^2 + (1/2)^3 + (1/2)^4+(1/2)^5$}
-  \choice{$3+6+9+12+15+18+21$}
-  \choice[correct]{$(1+r) + (1+r)^2 + (1+r)^3 + (1+r)^4+ (1+r)^5$}
-  \choice[correct]{$0.151515151515\dots$}
-\end{multipleChoice}
+%\begin{question}
+%Some students notice that the equation above includes a geometric
+%series.  Which of the following are examples of geometric series?
+%\begin{multipleChoice}
+%  \choice{$1+2+3+4+5+6+7$}
+%  \choice[correct]{$(1/2) + (1/2)^2 + (1/2)^3 + (1/2)^4+(1/2)^5$}
+%  \choice{$3+6+9+12+15+18+21$}
+%  \choice[correct]{$(1+r) + (1+r)^2 + (1+r)^3 + (1+r)^4+ (1+r)^5$}
+%  \choice[correct]{$0.151515151515\dots$}
+%\end{multipleChoice}
+%
+%\end{question}
 
-\end{question}
-
-\begin{question}
-  Find a closed-form expression for the sum of the geometric series:
-  \[
-  1 + (1+r) + (1+r)^2 + (1+r)^3 + \dots + (1+r)^{n-2}+ (1+r)^{n-1}
-  \]
-  \[
-  \answer{\frac{(1+r)^n-1}{r}}
-  \]
-\end{question}
-
+%
+%\begin{question}
+%  Find a closed-form expression for the sum of the geometric series:
+%  \[
+%  1 + (1+r) + (1+r)^2 + (1+r)^3 + \dots + (1+r)^{n-2}+ (1+r)^{n-1}
+%  \]
+%  \[
+%  \answer{\frac{(1+r)^n-1}{r}}
+%  \]
+%\end{question}
+%
 %\begin{question}
 %Call the geometric series $S$, and note that if you multiply $S$ by $r$, the ``common ratio,'' you get another geometric series with many of the same terms.  Use these observations to find the sum of the series.   
 %\begin{freeResponse}
 %\end{freeResponse}
 %\end{question}
-
-
+%
+%
 %% \begin{question}
 %% Use the closed-form expression for the sum of the geometric series to solve your equation for $x$, the annual payment.   
 %% \begin{freeResponse}
 %% \end{freeResponse}
 %% \end{question}
-
+%
 %\begin{question}
 %What about monthly payments?  In other words, suppose you borrow $\$P$ and agree to pay it back in equal monthly
 %payments over $n$ years, with an annual interest rate of $r$, compounded monthly.  
