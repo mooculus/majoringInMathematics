@@ -1,0 +1,17 @@
+This is makeindex, version 2.15 [MiKTeX 2.9] (kpathsea + Thai support).
+Scanning input file course.oc...
+!! Input index error (file = course.oc, line = 1):
+   -- Unknown index keyword \outcome.
+!! Input index error (file = course.oc, line = 2):
+   -- Unknown index keyword \outcome.
+!! Input index error (file = course.oc, line = 3):
+   -- Unknown index keyword \outcome.
+!! Input index error (file = course.oc, line = 4):
+   -- Unknown index keyword \outcome.
+!! Input index error (file = course.oc, line = 5):
+   -- Unknown index keyword \outcome.
+!! Input index error (file = course.oc, line = 6):
+   -- Unknown index keyword \outcome.
+done (0 entries accepted, 6 rejected).
+Nothing written in course.ind.
+Transcript written in course.ilg.
