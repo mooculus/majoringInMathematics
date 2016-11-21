@@ -9,20 +9,18 @@
 \begin{abstract}
 Here we continue to investigate where your payments go when you pay off debt.
 \end{abstract}
-{\flushleft Name:\protect\rule[-2pt]{3in}{.5pt}\hfill \\[.5cm]name.\#\protect\rule[-2pt]{3in}{.5pt}}%
 \maketitle
 
-\begin{question}
+\begin{question}[1in]
 Suppose you borrow $\$P$ and agree to pay it back in equal annual
 payments over $5$ years, with an annual interest rate of $r$, compounded annually.  
-Call the annual payment $x$, and write an equation that must be true if
-the payment amount is correct.  Hints: 
+
 \begin{itemize}
+\item Call the annual payment $x$.
 \item Use the table from last week's class, showing the interest, payment, and remaining
 principal at the end of years $1, 2, 3, \dots$.  
-\item Collect factors of $(1+r)$.
-\item Let $P_n$ denote the principal in year $n$, and write $P_n$ in terms of $P_{n-1}$, $r$, and $x$.
-\item Write $P_1$, $P_2$, $P_3$, \dots in terms of $P$, $r$, and $x$, and try to find a pattern.  
+\item Collect factors of $(1+r)$ where you can.  
+\item Let $P_n$ denote the principal in year $n$, with $P_0=P$, and write a recursive formula for $P_n$ in terms of $P_{n-1}$, $r$, and $x$ for $n\ge 1$.  
 \end{itemize}
 
 %\[
@@ -49,6 +47,11 @@ Year & Interest & Balance with Interest & Payment & Remaining Principal Balance 
 \end{freeResponse}
 \end{question}
 
+\begin{question}
+As a step toward a closed formula for $P_n$, write out expressions for $P_1$, $P_2$, $P_3$, \dots in terms of $P$, $r$, and $x$, and try to find a pattern (using dots).  
+\end{question}
+
+
 
 %\begin{question}
 %Some students notice that the equation above includes a geometric
@@ -63,9 +66,11 @@ Year & Interest & Balance with Interest & Payment & Remaining Principal Balance 
 %
 %\end{question}
 
+
+
 %
 %\begin{question}
-%  Find a closed-form expression for the sum of the geometric series:
+%Find a closed-form expression for the sum of the geometric series:
 %  \[
 %  1 + (1+r) + (1+r)^2 + (1+r)^3 + \dots + (1+r)^{n-2}+ (1+r)^{n-1}
 %  \]
@@ -81,11 +86,11 @@ Year & Interest & Balance with Interest & Payment & Remaining Principal Balance 
 %\end{question}
 %
 %
-%% \begin{question}
-%% Use the closed-form expression for the sum of the geometric series to solve your equation for $x$, the annual payment.   
-%% \begin{freeResponse}
-%% \end{freeResponse}
-%% \end{question}
+% \begin{question}
+% Use the closed-form expression for the sum of the geometric series to solve your equation for $x$, the annual payment.   
+% \begin{freeResponse}
+% \end{freeResponse}
+% \end{question}
 %
 %\begin{question}
 %What about monthly payments?  In other words, suppose you borrow $\$P$ and agree to pay it back in equal monthly
