@@ -1,0 +1,212 @@
+\documentclass[handout,nooutcomes]{ximera}
+
+\input{../preamble.tex}
+
+\title[Epilogue]{Sums and products combined, oh my!}
+
+\begin{document}
+\begin{abstract}
+Here we investigate a new way to combine numbers.
+\end{abstract}
+\maketitle
+
+\paragraph{The setting:}
+
+Suppose you wrote the numbers $1,2,3,\dots,100$ on a chalkboard. You
+may take any two numbers, erase them, and then add the sum of their
+sum and their product to the list.
+
+\begin{problem}
+     Write down as many mathematical questions as you can for this
+     setting. After you have your questions, label them as ``Level
+     1,'' ``Level 2,'' or ``Level 3'' where:
+\begin{description}
+\item[Level 1] Means you know the answer, or know exactly how to do
+  this problem.
+\item[Level 2] Means you think you know how to do the problem.
+\item[Level 3] Means you have no idea how to do the problem.
+\end{description}
+\begin{freeResponse}
+  Here are some example questions:
+  \paragraph{Level 1}
+  \begin{enumerate}
+    \item Given two positive numbers, if we perform the process on
+      these numbers will the result always be larger than the initial
+      two numbers?
+    \item If we do this process with a number and zero, what will be
+      the result?
+    \item Given a list of $2$ numbers, after performing the processes
+      once, how many numbers are in the list?
+    \item Given a list of $100$ numbers, after performing the process
+      once, how many numbers are in the list?
+    \item If we perform the process enough times, will we always end
+      with one number?
+    \item Given a list of $100$ numbers, how many times do we need to
+      perform the process to end with exactly $1$ number?
+    \item Given a list of positive numbers, can we choose which two
+      will give us the largest result after performing the process?
+    \item Given a list of positive numbers, can we choose which two
+      will give us the smallest result after performing the process?
+    \item If we think of the process as a binary operation, call it
+      $\pt$, is it commutative?
+    \item What is $1 \pt 1$?
+    \item Are there any two numbers $a$ and $b$ such that $a\pt b = 0$?
+    \item Is there a number $I$ such that $a\pt I= a$?
+  \end{enumerate}
+
+  \paragraph{Level 2}
+  \begin{enumerate}
+    \item Given two numbers $a$ and $b$, possibly positive or negative
+      or zero, will the result ever be smaller than $a$ or $b$?
+    \item If we think of the process as a binary operation, call it
+      $\pt$, is it associative?
+    \item What does associativity of the operation mean in the context
+      of our setting above?
+    \item Does the final result change depending on which numbers are
+      chosen at each ``turn?''
+    \item Are there nonzero numbers $a$ and $b$ with $a\pt b = 0$?
+    \item Are there numbers $a$ and $b$ with $a\pt b = 1$?
+    \item Are there numbers $a$ and $b$ with $a\pt b = -1$?
+    \item What is the final result, if the process is repeated over
+      and over, to the list
+      \[
+      \{1,2,3\}?
+      \]
+    \item What is the final result, if the process is repeated over
+      and over, to the list
+      \[
+      \{1,1,1\}?
+      \]
+    \item What is the final result, if the process is repeated over
+      and over, to the list
+      \[
+      \{-1,-1,-1\}?
+      \]
+    \item What is the final result, if the process is repeated over
+      and over, to the list
+      \[
+      \{1,-1,-1\}?
+      \]
+  \item What is the final result, if the process is repeated over
+      and over, to the list
+      \[
+      \{1,1,-1\}?
+      \]
+    \item Can we solve the equation
+      \[
+      a\pt 5 = 0?
+      \]
+\end{enumerate}
+
+  \paragraph{Level 3}
+  \begin{enumerate}
+  \item Given a list of length $n$
+    \[
+    \{1,1, \dots, 1\}
+    \]
+    repeat the process until one number remains. What is this number?
+  \item Given a list of length $n$
+    \[
+    \{2,2, \dots, 2\}
+    \]
+    repeat the process until one number remains. What is this number?
+  \item Given a list of length $n$
+    \[
+    \{-1,-1, \dots, -1\}
+    \]
+    repeat the process until one number remains. What is this number?
+  \item Given a list of length $n$
+    \[
+    \{-2,-2, \dots, -2\}
+    \]
+    repeat the process until one number remains. What is this number?
+  \item Given a list of length $n$ of consecutive positive numbers
+    repeat the process until one number remains. What is this number?
+  \item Given a list of length $n$ of consecutive nonnegative numbers
+    repeat the process until one number remains. What is this number?
+  \item Given a list of length $n$ of consecutive (possibly negative)
+    numbers repeat the process until one number remains. What is this
+    number?
+  \item Do there exist lists of numbers that will terminate with zero
+    when the procedure is applied multiple times?
+  \item Describe all lists of length $n$ that end at zero.
+  \item Can any numbers \textbf{not} be produced by our procedure?
+  \item Can we ``undo'' $\pt$? That is can we solve:
+    \[
+    x \pt y = n?
+    \]
+    for both $x$ and $y$?
+  \item Given $n$ and $a$, exactly when can we solve the equation
+      \[
+      a\pt x = n
+      \]
+      for $x$?
+      \item Can we develop an idea of a fraction with $\pt$ by working
+        analogously to the relationship between $\times$ and $\div$?
+  \item Compute:
+    \[
+    \frac{d}{dx} (n\pt x)
+    \]
+  \item Compute:
+    \[
+    \int n\pt x \,d x
+    \]
+  \end{enumerate}
+\end{freeResponse}
+\end{problem}
+
+
+\begin{problem}
+  Pick some of the questions listed above (or come up with your own!) and answer them.
+\end{problem}
+
+
+%% \begin{problem}
+%% In class we came up with several questions involing this setting. State three of them. 
+%% \begin{freeResponse}
+%% \end{freeResponse}
+%% \end{problem}
+
+%% \begin{problem}
+%%   With this setting, we made up a new operation $\pt$ where
+%%   \[
+%%   a\pt b = a+b + ab
+%%   \]
+%%   What is
+%%   \[
+%%   a\pt b\pt c = \answer{a+b+c+ab+ac+bc+abc}
+%%   \]
+%% \end{problem}
+
+%% \begin{problem}
+%% We showed that $\pt$ is \textbf{commutative}, which means
+%% \begin{multipleChoice}
+%%   \choice[correct]{$a\pt b = b\pt a$}
+%%   \choice{$((a\pt b)\pt c) = a(\pt (b\pt c))$}
+%% \end{multipleChoice}
+%% \end{problem}
+
+%% \begin{problem}
+%% We showed that $\pt$ is \textbf{associative}, which means
+%% \begin{multipleChoice}
+%%   \choice{$a\pt b = b\pt a$}
+%%   \choice[correct]{$((a\pt b)\pt c) = a(\pt (b\pt c))$}
+%% \end{multipleChoice}
+%% \end{problem}
+
+%% \begin{problem}
+%% Finally we encoutered several squences of numbers including
+%% \begin{align*}
+%%   &\{ 1, 3, 7, 15, 63,\dots\}\\
+%%   &\{ 2, 4, 8, 16, 64,\dots\}\\
+%%   &\{ 1, 5, 23, 119, 719,\dots\}\\
+%%   &\{ 1, 2, 6, 24, 120,\dots\}
+%% \end{align*}
+%% Look these sequences up at \link{https://oeis.org/}{https://oeis.org/}. Find something intersting at the OEIS and tell us about it.
+%% \begin{freeResponse}
+%% \end{freeResponse}
+%% See you next Tuesday!
+%% \end{problem}
+
+
+\end{document}
