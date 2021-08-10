@@ -1,0 +1,15 @@
+\pagestyle {empty}\flushleft 
+\special {ximera:filename mathMajorTracks/mathMajorTracks.tex}Activity\\Math Major Tracks\\There are lots of options for mathematics majors at The Ohio State University.\newpage 
+\special {ximera:filename sumsAndProductsCombinedOhMy/sumsAndProductsCombinedOhMy.tex}Activity\\Sums and products combined, oh my!\\Here we investigate a new way to combine numbers.\newpage 
+\special {ximera:filename sumsAndProductsCombinedOhMy/sumsAndProductsCombinedOhMy2.tex}Activity\\Sums and products combined, oh my! Part 2\\Here we continue to investigate a new way to combine numbers.\newpage 
+\special {ximera:filename drugDecay/drugDecay.tex}Activity\\Drug Decay\\Here we investigate various models for the decay of drugs in our bodies.\newpage 
+\special {ximera:filename drugDecay/drugDecayPart2.tex}Activity\\Drug Decay, Part 2\\Here we continue to investigate various models for the ``behavior'' of drugs in our bodies.\newpage 
+\special {ximera:filename aBeautifulMoon/aBeautifulMoon.tex}Activity\\A Beautiful Moon\\Here we investigate what would happen if the Moon were as close as the International Space Station.\newpage 
+\special {ximera:filename aBeautifulMoon/aBeautifulMoonPart2.tex}Activity\\A Beautiful Moon, Part 2\\We further investigate what would happen if the Moon were as close as the International Space Station.\newpage 
+\special {ximera:filename division/division.tex}Activity\\Division and Fractions\\Here we explore various ways of thinking about division, and we use those to explain some difficult division situations, such as division of fractions.\newpage 
+\special {ximera:filename division/divisionPart2.tex}Activity\\More Division\\Here again we explore various ways of thinking about division, and we use those to explain some difficult division situations, such as division of fractions and division involving zero.\newpage 
+\special {ximera:filename payingOffDebt/payingOffDebt.tex}Activity\\Paying off Debt\\Here we investigate where your payments go when you pay off debt.\newpage 
+\special {ximera:filename payingOffDebt/payingOffDebtPart2.tex}Activity\\Paying off Debt, Part 2\\Here we continue to investigate where your payments go when you pay off debt.\newpage 
+\special {ximera:filename eulerCharacteristic/eulerCharacteristic.tex}Activity\\Euler Characteristic\\In this activity we are going to investigate some fundamental properties of shapes.\newpage 
+\special {ximera:filename eulerCharacteristic/eulerCharacteristicPart2.tex}Activity\\Euler Characteristic, Part 2\\In this activity we are going to further investigate some fundamental properties of shapes.\newpage 
+\end {document}
